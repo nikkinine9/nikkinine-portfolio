@@ -8,10 +8,10 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', cursive;
-    --ff-secondary: 'Source Sans Pro', monospace;
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --ff-primary: 'Courgette', cursive;
+    --ff-secondary: 'Courgette', monospace;
+    --fw-reg: 500;
+    --fw-bold: 2000;
     --clr-light: ivory;
     --clr-dark: #303030;
     --clr-accent: #4d0026;
@@ -397,6 +397,25 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .75;
+}
+
+.my-resume {
+    display: flex;
+    flex: 50%;
+    margin: 2em;
+    margin-left: 10em;
+    margin-right: auto;
+}
+
+.section__title--resume {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .my-resume {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
 }
 
 
